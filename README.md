@@ -1,16 +1,22 @@
-## Hi there 👋
+# Hi, I'm Alibek
 
-<!--
-**AlibekZolotov/AlibekZolotov** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+AI student at Xiamen University Malaysia.
 
-Here are some ideas to get you started:
+## Currently Building
+- Malaysia Housing Price Prediction API
+- NLP chatbot projects
+- Learning MLOps and deployment
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Tech Stack
+- Python
+- Scikit-learn
+- FastAPI
+- Pandas
+- Git
+
+## Projects
+- Malaysia Housing Prediction
+- ML Chatbot
+
+## Goals
+Build real ML applications and deploy them online.
