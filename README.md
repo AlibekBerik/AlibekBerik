@@ -4,6 +4,8 @@ AI student at Xiamen University Malaysia, building end-to-end ML systems across 
 
 🎯 Seeking an AI/ML internship
 
+🌐 **Portfolio:** [alibekberik.github.io](https://alibekberik.github.io) — projects, experience, certificates and resume
+
 ## Tech Stack
 - **Languages:** Python, SQL
 - **ML/DL:** Scikit-learn, LightGBM, TensorFlow/Keras, PyTorch
@@ -25,5 +27,6 @@ AI student at Xiamen University Malaysia, building end-to-end ML systems across 
 Build production-ready ML applications and get real-world experience shipping models that people actually use.
 
 ## Connect
+- Portfolio: [alibekberik.github.io](https://alibekberik.github.io)
 - LinkedIn: [https://www.linkedin.com/in/alibek-berik-14b269193/](https://www.linkedin.com/in/alibek-berik-14b269193/)
 - Email: alibekberik13@gmail.com
