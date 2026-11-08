@@ -32,8 +32,8 @@ AI undergraduate at Xiamen University Malaysia, originally from Kazakhstan. I ha
 | Project | Stack | Result |
 |---|---|---|
 | [Kazakh Culture RAG Q&A](https://github.com/AlibekBerik/rag-qa-system) | ChromaDB, Groq, Docker | Grounded answers from Wikipedia; refuses out-of-scope questions instead of hallucinating |
-| [Customer Churn Prediction](https://github.com/AlibekBerik/churn-prediction) | SQL, XGBoost, SMOTE, Streamlit | Recall **40% → 67%** on 800K+ transactions |
-| [Sentiment Classifier](https://github.com/AlibekBerik/sentiment-classifier) | DistilBERT, FastAPI, Hugging Face | **85.9%** accuracy, 0.866 F1, model on the Hub |
+| [Customer Churn Prediction](https://github.com/AlibekBerik/churn-prediction) | SQL, XGBoost, SMOTE, Streamlit | Recall **40% → 67%** on 800K+ transactions · [live demo](https://churn-prediction-wff7qjwtq8kkugtoplbfsh.streamlit.app/) |
+| [Sentiment Classifier](https://github.com/AlibekBerik/sentiment-classifier) | DistilBERT, FastAPI, Hugging Face | **85.9%** accuracy, 0.866 F1 · [live demo](https://huggingface.co/spaces/Zolotouly/movie-review-sentiment) |
 | [Malaysia House Prices](https://github.com/AlibekBerik/Malaysia_House_Price_Prediction) | LightGBM | R² **0.35 → 0.60** |
 | [Tool-using AI Agent](https://github.com/AlibekBerik/Agent) | smolagents | Thought → Action → Observation loop with real tools |
 
