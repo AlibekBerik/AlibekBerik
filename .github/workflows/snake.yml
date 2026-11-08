@@ -28,7 +28,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd dist
+          # dist/ is created by the action's container as root, so copy the SVGs to a folder the runner owns
+          mkdir out
+          cp dist/github-snake.svg dist/github-snake-dark.svg out/
+          cd out
           git init -q -b output
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
