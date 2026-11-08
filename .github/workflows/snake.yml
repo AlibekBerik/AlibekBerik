@@ -1,0 +1,37 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # once a day
+  workflow_dispatch:
+
+# Least privilege: this workflow can only write to this repository's contents.
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # Pinned to an exact commit (v3.5.0); the action itself pins its Docker image by digest.
+      - name: Generate snake SVGs
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3.5.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      # Plain git, no extra third-party action: publish only the SVGs to the "output" branch.
+      - name: Push SVGs to the output branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd dist
+          git init -q -b output
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github-snake.svg github-snake-dark.svg
+          git commit -q -m "Update contribution snake"
+          git push -q -f "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" output
